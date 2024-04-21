@@ -1,0 +1,11 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.ant-picker-ok button.ant-btn {
+    /* Tùy chỉnh kiểu dáng cho phần tử button trong nút "OK" */
+    background-color: #1677ff; /* Màu nền mong muốn */
+    color: white; /* Màu chữ mong muốn */
+    border: none; /* Bỏ viền */
+    border-radius: 5px; /* Bo tròn góc */
+}
