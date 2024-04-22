@@ -244,13 +244,15 @@ const ServiceBookingManage = () => {
             Notifn("warning", "Cảnh báo", "File không được quá " + MAX_FILE_SIZE.toString() + "MB");
             setIsValidFileSize(false);
             return false; // Ngăn không cho tải lên
-        } else if (currentTotalSize / 1024 / 1024 > MAX_FILE_SIZE) {
-            Notifn("warning", "Cảnh báo", "Tổng kích thước các tệp không được vượt quá " + MAX_FILE_SIZE.toString() + "MB");
-            return false; // Ngăn không cho tải lên
-        } else {
-            setIsValidFileSize(true);
-            return true; // Cho phép tải lên
         }
+
+        if (currentTotalSize / 1024 / 1024 > MAX_FILE_SIZE) {
+            Notifn("warning", "Cảnh báo", "Tổng kích thước các tệp không được vượt quá " + MAX_FILE_SIZE.toString() + "MB");
+            setIsValidFileSize(false);
+            return false; // Ngăn không cho tải lên
+        }
+        setIsValidFileSize(true);
+        return true; // Cho phép tải lên
     };
 
     const handleChange = (info: UploadChangeParam) => {
