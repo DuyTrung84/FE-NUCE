@@ -1,0 +1,55 @@
+/* SlickCarousel.css */
+.slick-slide {
+    padding: 0 20px; /* Khoảng cách giữa các ô */
+}
+
+
+ 
+
+.slick-next {
+    color: rgb(161, 236, 244); /* Màu chữ cho các nút điều hướng */
+    font-size: 24px; /* Kích thước chữ cho các nút điều hướng */
+    position: absolute; /* Đặt vị trí tuyệt đối cho các nút điều hướng */
+    z-index: 2; /* Đảm bảo các nút điều hướng luôn hiển thị phía trên các slide */
+    top: 50%;
+    box-shadow: rgb(201, 236, 240) 2px 2px 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: rgb(181, 231, 237);
+    background-color: rgb(255, 255, 255);
+    padding-left: 5px;
+    left: 97%;
+}
+
+.slick-prev{
+    color: rgb(161, 236, 244) !important; /* Màu chữ cho các nút điều hướng */
+    font-size: 24px; /* Kích thước chữ cho các nút điều hướng */
+    position: absolute; /* Đặt vị trí tuyệt đối cho các nút điều hướng */
+    z-index: 2; /* Đảm bảo các nút điều hướng luôn hiển thị phía trên các slide */
+    top: 50%;
+    box-shadow: rgb(201, 236, 240) 2px 2px 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: rgb(181, 231, 237);
+    background-color: rgb(255, 255, 255);
+    padding-left: 5px;
+    left: 0%;
+}
+
+.slick-prev,
+.slick-next:hover{
+    color: rgb(161, 236, 244) !important;
+}
+
+.slick-prev:before {
+    content: '';
+}
+.slick-next:before {
+    content: '';
+}
+
+
