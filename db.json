@@ -1,0 +1,24 @@
+{
+    "telemedicine": [
+        {
+            "id": 1,
+            "title": "Tư vấn trị liệu tâm lý từ xa",
+            "image": "https://cdn.bookingcare.vn/fo/w640/2024/01/04/160245-tam-ly-tu-xa.png"
+        },
+        {
+            "id": 2,
+            "title": "Sức khoẻ tâm thần từ xa",
+            "image": "https://cdn.bookingcare.vn/fo/w1920/2024/01/04/103343-tam-than-tu-xa-1.png"
+        },
+        {
+            "id": 3,
+            "title": "Tư vấn da liễu từ xa",
+            "image": "https://cdn.bookingcare.vn/fo/w640/2024/01/04/160245-da-lieu-tu--xa.png"
+        },
+        {
+            "id": 4,
+            "title": "Bác sĩ nội khoa từ xa",
+            "image": "https://cdn.bookingcare.vn/fo/w640/2024/01/04/160245-noi-khoa-tu-xa.png"
+        }
+    ]
+}
