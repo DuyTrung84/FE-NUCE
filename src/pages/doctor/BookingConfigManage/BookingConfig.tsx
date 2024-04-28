@@ -26,9 +26,15 @@ const BookingConfig = () => {
                 okType: 'danger',
                 async onOk() {
                     try {
-                        await deleteConfig({ id });
-                        Notifn("success", "Thành công", "Xoá cấu hình thành công");
-                        isFetching
+                        await deleteConfig({ id })
+                            .unwrap()
+                            .then(() => {
+                                Notifn("success", "Thành công", "Xoá cấu hình thành công");
+                                isFetching
+                            })
+                            .catch((error: any) => {
+                                Notifn("error", "Lỗi", error.data.message || error.data);
+                            })
                     } catch (error) {
                         Notifn("error", "Lỗi", "Lỗi xoá trạng thái");
                     }

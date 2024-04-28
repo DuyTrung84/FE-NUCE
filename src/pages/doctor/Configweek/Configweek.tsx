@@ -15,13 +15,13 @@ const Configweek = () => {
     console.log(data)
     useEffect(() => {
         form.setFieldsValue({
-            monday: data?.data[0]?.config.id,
-            tuesday: data?.data[1]?.config.id,
-            wednesday: data?.data[2]?.config.id,
-            thursday: data?.data[3]?.config.id,
-            friday: data?.data[4]?.config.id,
-            saturday: data?.data[5]?.config.id,
-            sunday: data?.data[6]?.config.id
+            monday: data?.data[0]?.config?.id,
+            tuesday: data?.data[1]?.config?.id,
+            wednesday: data?.data[2]?.config?.id,
+            thursday: data?.data[3]?.config?.id,
+            friday: data?.data[4]?.config?.id,
+            saturday: data?.data[5]?.config?.id,
+            sunday: data?.data[6]?.config?.id
         })
     })
 
@@ -64,6 +64,7 @@ const Configweek = () => {
                             <Select
                                 loading={loading}
                                 className="w-full"
+                                allowClear
                             >
                                 {dataConfig?.data?.map((item: any) => (
                                     <Select.Option key={item.id} value={item.id}>{item.name}</Select.Option>
@@ -79,6 +80,7 @@ const Configweek = () => {
                             <Select
                                 loading={loading}
                                 className="w-full"
+                                allowClear
                             >
                                 {dataConfig?.data?.map((item: any) => (
                                     <Select.Option key={item.id} value={item.id}>{item.name}</Select.Option>
@@ -94,6 +96,7 @@ const Configweek = () => {
                             <Select
                                 loading={loading}
                                 className="w-full"
+                                allowClear
                             >
                                 {dataConfig?.data?.map((item: any) => (
                                     <Select.Option key={item.id} value={item.id}>{item.name}</Select.Option>
@@ -109,6 +112,7 @@ const Configweek = () => {
                             <Select
                                 loading={loading}
                                 className="w-full"
+                                allowClear
                             >
                                 {dataConfig?.data?.map((item: any) => (
                                     <Select.Option key={item.id} value={item.id}>{item.name}</Select.Option>
@@ -124,6 +128,7 @@ const Configweek = () => {
                             <Select
                                 loading={loading}
                                 className="w-full"
+                                allowClear
                             >
                                 {dataConfig?.data?.map((item: any) => (
                                     <Select.Option key={item.id} value={item.id}>{item.name}</Select.Option>
@@ -139,6 +144,7 @@ const Configweek = () => {
                             <Select
                                 loading={loading}
                                 className="w-full"
+                                allowClear
                             >
                                 {dataConfig?.data?.map((item: any) => (
                                     <Select.Option key={item.id} value={item.id}>{item.name}</Select.Option>
@@ -154,6 +160,7 @@ const Configweek = () => {
                             <Select
                                 loading={loading}
                                 className="w-full"
+                                allowClear
                             >
                                 {dataConfig?.data?.map((item: any) => (
                                     <Select.Option key={item.id} value={item.id}>{item.name}</Select.Option>
